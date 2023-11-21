@@ -1,0 +1,18 @@
+#animations{
+    width: 7px;
+    height: 7px;
+    padding: 8px;
+    background-color: #44ce6f;
+    border-radius: 50%;
+    animation-name: animation;
+    animation-duration: 7s;
+    transition: 1s ease-in-out;
+    animation-iteration-count:infinite;
+        
+}
+
+@keyframes animation {
+    from {margin-left: 0%;}
+    50% {margin-left: 100%;}
+    to {margin-left: 0%;}
+  }
