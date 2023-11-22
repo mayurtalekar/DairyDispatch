@@ -8,8 +8,4 @@ import { MilkService } from './milk.service';
 })
 export class AppComponent {
   title = 'milkman';
-  constructor(public ms:MilkService){
- console.log(this.ms.shree);
- 
-  }
 }
