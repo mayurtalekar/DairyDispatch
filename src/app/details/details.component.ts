@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { MilkService } from '../milk.service';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  selector: 'app-details',
+  templateUrl: './details.component.html',
+  styleUrls: ['./details.component.css']
 })
-export class AboutComponent {
+export class DetailsComponent {
   constructor(public service : MilkService){
-    
+
   }
 
 }

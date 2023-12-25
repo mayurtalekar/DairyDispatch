@@ -7,13 +7,25 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { DetailsComponent } from './details/details.component';
+import { FoodQuantityComponent } from './food-quantity/food-quantity.component';
+import { ContactComponent } from './contact/contact.component';
+import { OtpVerificationComponent } from './otp-verification/otp-verification.component';
+import { UserInformationComponent } from './user-information/user-information.component';
+import { PaymentMathodComponent } from './payment-mathod/payment-mathod.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    DetailsComponent,
+    FoodQuantityComponent,
+    ContactComponent,
+    OtpVerificationComponent,
+    UserInformationComponent,
+    PaymentMathodComponent
   ],
   imports: [
     BrowserModule,

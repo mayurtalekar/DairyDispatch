@@ -1,0 +1,75 @@
+<div class="p-3 flex h-[100%] flex-col justify-between items-stretch">
+    <div>
+        <header class="flex justify-between items-center">
+            <span (click)="service.closepopup()" class="material-symbols-outlined">
+                arrow_back
+            </span>
+            <p class="font-Roboto font-bold text-start text-xl mt-0">The Complete Meal</p>
+            <div> </div>
+        </header>
+        <div class="flex gap-16 mt-5">
+            <div>
+                <div class="flex gap-3 mt-5">
+                    <img src="../../assets/Group.png" alt="">
+                    <p class="font-Roboto font-bold text-xs">Bhakri</p>
+                </div>
+                <div class="flex gap-3 mt-5">
+                    <img src="../../assets/Vector.png" alt="">
+                    <p class="font-Roboto font-bold text-xs">Pitla</p>
+                </div>
+                <div class="flex gap-3 mt-5">
+                    <img src="../../assets/Group 9.png" alt="">
+                    <p class="font-Roboto font-bold text-xs">Thecha</p>
+                </div>
+                <div class="flex gap-3 mt-5">
+                    <img src="../../assets/Vector (1).png" alt="">
+                    <p class="font-Roboto font-bold text-xs">Onion</p>
+                </div>
+            </div>
+            <div class="mt-5 items-center">
+                <div class="flex w-[80px] justify-between">
+                
+                    <span (click)="bhakriDecrement()" class="material-symbols-outlined">
+                        remove
+                        </span>
+                    <p>{{bhakri}}</p>
+                    <span (click)="bhakriIncrement()" class="material-symbols-outlined">
+                        add
+                        </span>
+                </div>
+                <div class="flex w-[80px] justify-between mt-4">
+                        <span (click)="pithlaDecrement()" class="material-symbols-outlined">
+                            remove
+                            </span>
+                    <p>{{pithla}}</p>
+                    <span (click)="pithlaIncrement()" class="material-symbols-outlined">
+                        add
+                        </span>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-2 mt-[38px] ">
+            <span class="text-[18px] font-bold">Food Test</span>
+            <div class="flex justify-between">
+                <span class="font-Roboto font-bold text-xs">Medium</span>
+                <input (input)="seleted = true" value="Medium" [checked]="seleted" class="rounded-full" type="checkbox">
+            </div>
+            <div class="flex justify-between">
+                <span class="font-Roboto font-bold text-xs">Spicy</span>
+                <input (input)="seleted = false" value="Spicy" [checked]="!seleted" class="rounded-full" type="checkbox">
+            </div>
+        </div>
+    </div>
+    <footer class="flex justify-between items-center mb-2">
+        <div class="flex flex-col">
+            <p class="text-xs font-Roboto font-medium">Price</p>
+            <p class="text-xl font-bold">₹{{bhakriPrice + pithlaPrice}}</p>
+        </div>
+        <div>
+            <button (click)="pushValueToService()" (click)="service.openContact()"
+                class="py-2 px-4 w-36 h-10  bg-blue-500 text-white font-bold rounded-[20px] max-h-[915px] shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+                Pay Now
+            </button>
+        </div>
+    </footer>
+</div>
