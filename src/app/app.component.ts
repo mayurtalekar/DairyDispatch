@@ -7,5 +7,6 @@ import { MilkService } from './milk.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor(public service : MilkService){}
   title = 'milkman';
 }
